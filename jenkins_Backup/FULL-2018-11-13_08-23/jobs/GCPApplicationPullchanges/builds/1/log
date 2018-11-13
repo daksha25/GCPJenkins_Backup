@@ -1,0 +1,248 @@
+Started by user [8mha:////4C+RzKgWyO49TbLkHnIaiOjSo6AQdkn++EA3bnXLG0NwAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lMTs4oxEAMbOizvBAAAA[0mdaksha
+Building in workspace /var/lib/jenkins/workspace/GCPApplicationPullchanges
+Cloning the remote Git repository
+Cloning repository https://github.com/daksha25/GCPDeployment.git
+ > git init /var/lib/jenkins/workspace/GCPApplicationPullchanges # timeout=10
+Fetching upstream changes from https://github.com/daksha25/GCPDeployment.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/daksha25/GCPDeployment.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/daksha25/GCPDeployment.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/daksha25/GCPDeployment.git # timeout=10
+Fetching upstream changes from https://github.com/daksha25/GCPDeployment.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/daksha25/GCPDeployment.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3184ffd4799b135c5b546af2fc971a0466028585 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3184ffd4799b135c5b546af2fc971a0466028585
+Commit message: "Update hibernate.cfg.xml"
+First time build. Skipping changelog.
+[GCPApplicationPullchanges] $ /bin/sh -xe /tmp/jenkins2827809818028502685.sh
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Pid_G_v8.0 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:compile[m [1m(default-compile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 24 source files to /var/lib/jenkins/workspace/GCPApplicationPullchanges/target/classes
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationPullchanges/src/com/DAO/ErrorRepositoryDAoImpl.java: /var/lib/jenkins/workspace/GCPApplicationPullchanges/src/com/DAO/ErrorRepositoryDAoImpl.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationPullchanges/src/com/DAO/ErrorRepositoryDAoImpl.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/GCPApplicationPullchanges/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:testCompile[m [1m(default-testCompile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:3.0.0:war[m [1m(default-war)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [Pid_G_v8.0] in [/var/lib/jenkins/workspace/GCPApplicationPullchanges/target/Pid_G_v8.0-0.0.1-SNAPSHOT]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/lib/jenkins/workspace/GCPApplicationPullchanges/WebContent]
+[[1;34mINFO[m] Webapp assembled in [138 msecs]
+[[1;34mINFO[m] Building war: /var/lib/jenkins/workspace/GCPApplicationPullchanges/target/infybank.war
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationPullchanges/target/infybank.war to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.war
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationPullchanges/pom.xml to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 5.409 s
+[[1;34mINFO[m] Finished at: 2018-10-30T04:58:13Z
+[[1;34mINFO[m] Final Memory: 20M/247M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
++ docker build -t daksha25/infybankapp:1 .
+free(): invalid pointer
+SIGABRT: abort
+PC=0x7feb26435e97 m=0 sigcode=18446744073709551610
+signal arrived during cgo execution
+
+goroutine 1 [syscall, locked to thread]:
+runtime.cgocall(0x4afd50, 0xc42004dcc0, 0xc42004dce8)
+	/usr/lib/go-1.8/src/runtime/cgocall.go:131 +0xe2 fp=0xc42004dc90 sp=0xc42004dc50
+github.com/docker/docker-credential-helpers/secretservice._Cfunc_free(0x2630270)
+	github.com/docker/docker-credential-helpers/secretservice/_obj/_cgo_gotypes.go:111 +0x41 fp=0xc42004dcc0 sp=0xc42004dc90
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List.func5(0x2630270)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:96 +0x60 fp=0xc42004dcf8 sp=0xc42004dcc0
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List(0x0, 0x756060, 0xc420014380)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:97 +0x217 fp=0xc42004dda0 sp=0xc42004dcf8
+github.com/docker/docker-credential-helpers/secretservice.(*Secretservice).List(0x77e548, 0xc42004de88, 0x410022, 0xc4200142e0)
+	<autogenerated>:4 +0x46 fp=0xc42004dde0 sp=0xc42004dda0
+github.com/docker/docker-credential-helpers/credentials.List(0x756ba0, 0x77e548, 0x7560e0, 0xc42000e018, 0x0, 0x10)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:145 +0x3e fp=0xc42004de68 sp=0xc42004dde0
+github.com/docker/docker-credential-helpers/credentials.HandleCommand(0x756ba0, 0x77e548, 0x7ffcef3a4888, 0x4, 0x7560a0, 0xc42000e010, 0x7560e0, 0xc42000e018, 0x40e398, 0x4d35c0)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:60 +0x16d fp=0xc42004ded8 sp=0xc42004de68
+github.com/docker/docker-credential-helpers/credentials.Serve(0x756ba0, 0x77e548)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:41 +0x1cb fp=0xc42004df58 sp=0xc42004ded8
+main.main()
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/secretservice/cmd/main_linux.go:9 +0x4f fp=0xc42004df88 sp=0xc42004df58
+runtime.main()
+	/usr/lib/go-1.8/src/runtime/proc.go:185 +0x20a fp=0xc42004dfe0 sp=0xc42004df88
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1 fp=0xc42004dfe8 sp=0xc42004dfe0
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1
+
+rax    0x0
+rbx    0x7ffcef3a2320
+rcx    0x7feb26435e97
+rdx    0x0
+rdi    0x2
+rsi    0x7ffcef3a20b0
+rbp    0x7ffcef3a2420
+rsp    0x7ffcef3a20b0
+r8     0x0
+r9     0x7ffcef3a20b0
+r10    0x8
+r11    0x246
+r12    0x7ffcef3a2320
+r13    0x1000
+r14    0x0
+r15    0x30
+rip    0x7feb26435e97
+rflags 0x246
+cs     0x33
+fs     0x0
+gs     0x0
+Sending build context to Docker daemon  92.67MB
+Step 1/5 : FROM tomcat:8.5
+ ---> 05af71dd9251
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+ ---> 4256237f1105
+Step 3/5 : WORKDIR /usr/local/tomcat
+ ---> Running in ce8501579b1d
+Removing intermediate container ce8501579b1d
+ ---> 1956802c7c46
+Step 4/5 : RUN chmod +x bin/catalina.sh
+ ---> Running in c8ef521beba5
+Removing intermediate container c8ef521beba5
+ ---> 337410d05506
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+ ---> Running in 66b3a36c5983
+Removing intermediate container 66b3a36c5983
+ ---> 176711a54425
+Successfully built 176711a54425
+Successfully tagged daksha25/infybankapp:1
+Docker Build
+Docker Build: building image at path /var/lib/jenkins/workspace/GCPApplicationPullchanges
+Step 1/5 : FROM tomcat:8.5
+
+
+ ---> 05af71dd9251
+
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+
+
+ ---> Using cache
+
+ ---> 4256237f1105
+
+Step 3/5 : WORKDIR /usr/local/tomcat
+
+
+ ---> Using cache
+
+ ---> 1956802c7c46
+
+Step 4/5 : RUN chmod +x bin/catalina.sh
+
+
+ ---> Using cache
+
+ ---> 337410d05506
+
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+
+
+ ---> Using cache
+
+ ---> 176711a54425
+
+Successfully built 176711a54425
+
+Tagging built image with daksha25/infybankapp:1
+Docker Build Response : 176711a54425
+Pushing [daksha25/infybankapp:1]
+The push refers to repository [docker.io/daksha25/infybankapp]
+ded5ea358f5a: Preparing
+e2f662dff99f: Preparing
+1a9d06dd524f: Preparing
+de6d5c01d209: Preparing
+4c67d93ae2ce: Preparing
+b0b6904b7998: Preparing
+ceaed1136256: Preparing
+923bc9a5d019: Preparing
+185c62a48a71: Preparing
+d683471ab65a: Preparing
+0f25831f224d: Preparing
+08a01612ffca: Preparing
+8bb25f9cdc41: Preparing
+f715ed19c28b: Preparing
+b0b6904b7998: Waiting
+ceaed1136256: Waiting
+923bc9a5d019: Waiting
+185c62a48a71: Waiting
+d683471ab65a: Waiting
+0f25831f224d: Waiting
+08a01612ffca: Waiting
+8bb25f9cdc41: Waiting
+f715ed19c28b: Waiting
+1a9d06dd524f: Layer already exists
+ded5ea358f5a: Layer already exists
+de6d5c01d209: Layer already exists
+4c67d93ae2ce: Layer already exists
+e2f662dff99f: Pushing [>                                                  ]  264.7kB/24.22MB
+e2f662dff99f: Pushing [=>                                                 ]    789kB/24.22MB
+b0b6904b7998: Layer already exists
+ceaed1136256: Layer already exists
+923bc9a5d019: Layer already exists
+185c62a48a71: Layer already exists
+e2f662dff99f: Pushing [===>                                               ]  1.838MB/24.22MB
+e2f662dff99f: Pushing [=======>                                           ]   3.41MB/24.22MB
+e2f662dff99f: Pushing [===========>                                       ]  5.508MB/24.22MB
+e2f662dff99f: Pushing [================>                                  ]  7.867MB/24.22MB
+d683471ab65a: Layer already exists
+e2f662dff99f: Pushing [==================>                                ]  9.178MB/24.22MB
+8bb25f9cdc41: Layer already exists
+0f25831f224d: Layer already exists
+08a01612ffca: Layer already exists
+e2f662dff99f: Pushing [========================>                          ]   11.8MB/24.22MB
+e2f662dff99f: Pushing [=============================>                     ]  14.42MB/24.22MB
+e2f662dff99f: Pushing [===================================>               ]  17.04MB/24.22MB
+e2f662dff99f: Pushing [========================================>          ]   19.4MB/24.22MB
+f715ed19c28b: Layer already exists
+e2f662dff99f: Pushing [=============================================>     ]  22.02MB/24.22MB
+e2f662dff99f: Pushing [==================================================>]  24.23MB
+e2f662dff99f: Pushed
+1: digest: sha256:1367f98d4c175d1812740380fe1b95e33d34291372a7a5f2403b11c851a62aa3 size: 3256
+Cleaning local images [176711a54425]
+Docker Build Done
+[GCPApplicationPullchanges] $ /bin/sh -xe /tmp/jenkins4715908414458747710.sh
++ gcloud container clusters get-credentials bankappdeploy --zone us-west1-b --project ci-cd-poc-218510
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for bankappdeploy.
++ kubectl run appdeploy --image=daksha25/infybankapp:1 --port=8080
+kubectl run --generator=deployment/apps.v1beta1 is DEPRECATED and will be removed in a future version. Use kubectl create instead.
+Error from server (AlreadyExists): deployments.apps "appdeploy" already exists
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

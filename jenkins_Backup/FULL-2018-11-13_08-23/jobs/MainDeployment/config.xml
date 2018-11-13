@@ -1,0 +1,103 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>imageName</name>
+          <description></description>
+          <defaultValue>infybankapp</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>dockerUser</name>
+          <description></description>
+          <defaultValue>daksha25</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>clusterName</name>
+          <description></description>
+          <defaultValue>bankappdeploy</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>zone</name>
+          <description></description>
+          <defaultValue>us-west1-b </defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>deploymentName</name>
+          <description></description>
+          <defaultValue>appdeploy</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>port</name>
+          <description></description>
+          <defaultValue>8080</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/daksha25/GCPDeployment.git</url>
+        <credentialsId>42c4622c-c96b-43b9-b9f2-4a93b36ef615</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>mvn clean install
+docker build -t ${dockerUser}/${imageName}:${BUILD_NUMBER} .</command>
+    </hudson.tasks.Shell>
+    <com.nirima.jenkins.plugins.docker.builder.DockerBuilderPublisher plugin="docker-plugin@1.1.5">
+      <dockerFileDirectory></dockerFileDirectory>
+      <fromRegistry plugin="docker-commons@1.13"/>
+      <tags>
+        <string>${dockerUser}/${imageName}:${BUILD_NUMBER}</string>
+      </tags>
+      <pushOnSuccess>true</pushOnSuccess>
+      <pushCredentialsId>42c4622c-c96b-43b9-b9f2-4a93b36ef615</pushCredentialsId>
+      <cleanImages>true</cleanImages>
+      <cleanupWithJenkinsJobDelete>false</cleanupWithJenkinsJobDelete>
+      <cloud>docker</cloud>
+    </com.nirima.jenkins.plugins.docker.builder.DockerBuilderPublisher>
+    <hudson.tasks.Shell>
+      <command>gcloud container clusters create ${clusterName} --zone ${zone}
+gcloud container clusters get-credentials ${clusterName} --zone ${zone} --project ci-cd-poc-218510
+kubectl run ${deploymentName} --image=${dockerUser}/${imageName}:${BUILD_NUMBER} --port=${port}
+kubectl get deployment
+kubectl get pods
+kubectl expose deployment ${deploymentName} --type=&quot;LoadBalancer&quot;
+kubectl get services ${deploymentName}
+sleep 2m
+kubectl get services
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

@@ -1,0 +1,118 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>imageName</name>
+          <description></description>
+          <value>infybankapp</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>dockerUser</name>
+          <description></description>
+          <value>daksha25</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>clusterName</name>
+          <description></description>
+          <value>bankappdeploy</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>zone</name>
+          <description></description>
+          <value>us-east4-b</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>deploymentName</name>
+          <description></description>
+          <value>appdeploy1</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>port</name>
+          <description></description>
+          <value>8080</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>imageName</string>
+        <string>dockerUser</string>
+        <string>clusterName</string>
+        <string>zone</string>
+        <string>deploymentName</string>
+        <string>port</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>daksha</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.3">
+              <sha1>63e0864e84cac57b8b02dfc3e2cec551acfb2edc</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>3</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/daksha25/GCPDeployment.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/lib/jenkins/workspace/GCPApplicationPullchanges</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <com.nirima.jenkins.plugins.docker.action.DockerBuildImageAction plugin="docker-plugin@1.1.5">
+      <containerHost>unix:///var/run/docker.sock</containerHost>
+      <containerId>729c0f36f627</containerId>
+      <tags>
+        <string>daksha25/infybankapp:3</string>
+      </tags>
+      <cleanupWithJenkinsJobDelete>false</cleanupWithJenkinsJobDelete>
+      <pushOnSuccess>true</pushOnSuccess>
+    </com.nirima.jenkins.plugins.docker.action.DockerBuildImageAction>
+  </actions>
+  <queueId>14</queueId>
+  <timestamp>1542018185193</timestamp>
+  <startTime>1542018185198</startTime>
+  <result>SUCCESS</result>
+  <duration>173129</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/workspace/GCPApplicationPullchanges</workspace>
+  <hudsonVersion>2.138.2</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.9.1">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>noreply</string>
+    <string>root</string>
+  </culprits>
+</build>

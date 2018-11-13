@@ -1,0 +1,129 @@
+Started by user [8mha:////4C+RzKgWyO49TbLkHnIaiOjSo6AQdkn++EA3bnXLG0NwAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lMTs4oxEAMbOizvBAAAA[0mdaksha
+Building in workspace /var/lib/jenkins/workspace/GCPApplicationDeploy
+Cloning the remote Git repository
+Cloning repository https://github.com/daksha25/GCPDeployment.git
+ > git init /var/lib/jenkins/workspace/GCPApplicationDeploy # timeout=10
+Fetching upstream changes from https://github.com/daksha25/GCPDeployment.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/daksha25/GCPDeployment.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/daksha25/GCPDeployment.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/daksha25/GCPDeployment.git # timeout=10
+Fetching upstream changes from https://github.com/daksha25/GCPDeployment.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/daksha25/GCPDeployment.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7a66782323fe17f8cc1aaaa4e6fa5f61f8cde088 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7a66782323fe17f8cc1aaaa4e6fa5f61f8cde088
+Commit message: "Update hibernate.cfg.xml"
+ > git rev-list --no-walk 7a66782323fe17f8cc1aaaa4e6fa5f61f8cde088 # timeout=10
+[GCPApplicationDeploy] $ /bin/sh -xe /tmp/jenkins9080562780993888072.sh
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Pid_G_v8.0 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:compile[m [1m(default-compile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 24 source files to /var/lib/jenkins/workspace/GCPApplicationDeploy/target/classes
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/GCPApplicationDeploy/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:testCompile[m [1m(default-testCompile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:3.0.0:war[m [1m(default-war)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [Pid_G_v8.0] in [/var/lib/jenkins/workspace/GCPApplicationDeploy/target/Pid_G_v8.0-0.0.1-SNAPSHOT]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/lib/jenkins/workspace/GCPApplicationDeploy/WebContent]
+[[1;34mINFO[m] Webapp assembled in [284 msecs]
+[[1;34mINFO[m] Building war: /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.war
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/pom.xml to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 8.971 s
+[[1;34mINFO[m] Finished at: 2018-10-29T12:45:09Z
+[[1;34mINFO[m] Final Memory: 20M/252M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
++ docker build -t daksha25/infybankapp:7 .
+free(): invalid pointer
+SIGABRT: abort
+PC=0x7fa4a0d2de97 m=0 sigcode=18446744073709551610
+signal arrived during cgo execution
+
+goroutine 1 [syscall, locked to thread]:
+runtime.cgocall(0x4afd50, 0xc420055cc0, 0xc420055ce8)
+	/usr/lib/go-1.8/src/runtime/cgocall.go:131 +0xe2 fp=0xc420055c90 sp=0xc420055c50
+github.com/docker/docker-credential-helpers/secretservice._Cfunc_free(0x1ac3270)
+	github.com/docker/docker-credential-helpers/secretservice/_obj/_cgo_gotypes.go:111 +0x41 fp=0xc420055cc0 sp=0xc420055c90
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List.func5(0x1ac3270)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:96 +0x60 fp=0xc420055cf8 sp=0xc420055cc0
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List(0x0, 0x756060, 0xc420016380)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:97 +0x217 fp=0xc420055da0 sp=0xc420055cf8
+github.com/docker/docker-credential-helpers/secretservice.(*Secretservice).List(0x77e548, 0xc420055e88, 0x410022, 0xc4200162e0)
+	<autogenerated>:4 +0x46 fp=0xc420055de0 sp=0xc420055da0
+github.com/docker/docker-credential-helpers/credentials.List(0x756ba0, 0x77e548, 0x7560e0, 0xc42000e018, 0x0, 0x10)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:145 +0x3e fp=0xc420055e68 sp=0xc420055de0
+github.com/docker/docker-credential-helpers/credentials.HandleCommand(0x756ba0, 0x77e548, 0x7fff1ad8f835, 0x4, 0x7560a0, 0xc42000e010, 0x7560e0, 0xc42000e018, 0x40e398, 0x4d35c0)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:60 +0x16d fp=0xc420055ed8 sp=0xc420055e68
+github.com/docker/docker-credential-helpers/credentials.Serve(0x756ba0, 0x77e548)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:41 +0x1cb fp=0xc420055f58 sp=0xc420055ed8
+main.main()
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/secretservice/cmd/main_linux.go:9 +0x4f fp=0xc420055f88 sp=0xc420055f58
+runtime.main()
+	/usr/lib/go-1.8/src/runtime/proc.go:185 +0x20a fp=0xc420055fe0 sp=0xc420055f88
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1 fp=0xc420055fe8 sp=0xc420055fe0
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1
+
+rax    0x0
+rbx    0x7fff1ad8df30
+rcx    0x7fa4a0d2de97
+rdx    0x0
+rdi    0x2
+rsi    0x7fff1ad8dcc0
+rbp    0x7fff1ad8e030
+rsp    0x7fff1ad8dcc0
+r8     0x0
+r9     0x7fff1ad8dcc0
+r10    0x8
+r11    0x246
+r12    0x7fff1ad8df30
+r13    0x1000
+r14    0x0
+r15    0x30
+rip    0x7fa4a0d2de97
+rflags 0x246
+cs     0x33
+fs     0x0
+gs     0x0
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.38/build?buildargs=%7B%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile&labels=%7B%7D&memory=0&memswap=0&networkmode=default&rm=1&session=z8nqz0a3wnf27ir2f8w3f9m44&shmsize=0&t=daksha25%2Finfybankapp%3A7&target=&ulimits=null&version=1: dial unix /var/run/docker.sock: connect: permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

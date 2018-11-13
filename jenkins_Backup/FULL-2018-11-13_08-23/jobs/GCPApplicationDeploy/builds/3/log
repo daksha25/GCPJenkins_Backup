@@ -1,0 +1,198 @@
+Started by user [8mha:////4C+RzKgWyO49TbLkHnIaiOjSo6AQdkn++EA3bnXLG0NwAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lMTs4oxEAMbOizvBAAAA[0mdaksha
+Building in workspace /var/lib/jenkins/workspace/GCPApplicationDeploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/daksha25/GCPDeployment.git # timeout=10
+Fetching upstream changes from https://github.com/daksha25/GCPDeployment.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/daksha25/GCPDeployment.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3807c3739efb3975530563438e6f98340f7422e0 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3807c3739efb3975530563438e6f98340f7422e0
+Commit message: "Update Home.xhtml"
+ > git rev-list --no-walk 3807c3739efb3975530563438e6f98340f7422e0 # timeout=10
+[GCPApplicationDeploy] $ /bin/sh -xe /tmp/jenkins7861392925466195896.sh
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Pid_G_v8.0 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/lib/jenkins/workspace/GCPApplicationDeploy/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:compile[m [1m(default-compile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 24 source files to /var/lib/jenkins/workspace/GCPApplicationDeploy/target/classes
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/GCPApplicationDeploy/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:testCompile[m [1m(default-testCompile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:3.0.0:war[m [1m(default-war)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [Pid_G_v8.0] in [/var/lib/jenkins/workspace/GCPApplicationDeploy/target/Pid_G_v8.0-0.0.1-SNAPSHOT]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/lib/jenkins/workspace/GCPApplicationDeploy/WebContent]
+[[1;34mINFO[m] Webapp assembled in [137 msecs]
+[[1;34mINFO[m] Building war: /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.war
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/pom.xml to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 5.071 s
+[[1;34mINFO[m] Finished at: 2018-10-25T09:21:28Z
+[[1;34mINFO[m] Final Memory: 20M/244M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
++ docker build -t daksha25/infybankapp:3 .
+Sending build context to Docker daemon  91.28MB
+Step 1/5 : FROM tomcat:8.5
+ ---> 05af71dd9251
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+ ---> 2071e345d57b
+Step 3/5 : WORKDIR /usr/local/tomcat
+ ---> Running in 75418130195a
+Removing intermediate container 75418130195a
+ ---> f14925f72ec1
+Step 4/5 : RUN chmod +x bin/catalina.sh
+ ---> Running in e6339a8a3e21
+Removing intermediate container e6339a8a3e21
+ ---> 6ee28aae8b52
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+ ---> Running in 5f47c03b6240
+Removing intermediate container 5f47c03b6240
+ ---> 2ef0ced60277
+Successfully built 2ef0ced60277
+Successfully tagged daksha25/infybankapp:3
+Docker Build
+Docker Build: building image at path /var/lib/jenkins/workspace/GCPApplicationDeploy
+Step 1/5 : FROM tomcat:8.5
+
+
+ ---> 05af71dd9251
+
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+
+
+ ---> Using cache
+
+ ---> 2071e345d57b
+
+Step 3/5 : WORKDIR /usr/local/tomcat
+
+
+ ---> Using cache
+
+ ---> f14925f72ec1
+
+Step 4/5 : RUN chmod +x bin/catalina.sh
+
+
+ ---> Using cache
+
+ ---> 6ee28aae8b52
+
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+
+
+ ---> Using cache
+
+ ---> 2ef0ced60277
+
+Successfully built 2ef0ced60277
+
+Tagging built image with daksha25/infybankapp:3
+Docker Build Response : 2ef0ced60277
+Pushing [daksha25/infybankapp:3]
+The push refers to repository [docker.io/daksha25/infybankapp]
+ded5ea358f5a: Preparing
+865132c46960: Preparing
+1a9d06dd524f: Preparing
+de6d5c01d209: Preparing
+4c67d93ae2ce: Preparing
+b0b6904b7998: Preparing
+ceaed1136256: Preparing
+923bc9a5d019: Preparing
+185c62a48a71: Preparing
+d683471ab65a: Preparing
+0f25831f224d: Preparing
+08a01612ffca: Preparing
+8bb25f9cdc41: Preparing
+f715ed19c28b: Preparing
+b0b6904b7998: Waiting
+ceaed1136256: Waiting
+923bc9a5d019: Waiting
+185c62a48a71: Waiting
+d683471ab65a: Waiting
+0f25831f224d: Waiting
+08a01612ffca: Waiting
+8bb25f9cdc41: Waiting
+f715ed19c28b: Waiting
+4c67d93ae2ce: Layer already exists
+ded5ea358f5a: Layer already exists
+de6d5c01d209: Layer already exists
+1a9d06dd524f: Layer already exists
+865132c46960: Pushing [>                                                  ]  264.7kB/24.22MB
+b0b6904b7998: Layer already exists
+865132c46960: Pushing [=>                                                 ]    789kB/24.22MB
+185c62a48a71: Layer already exists
+ceaed1136256: Layer already exists
+923bc9a5d019: Layer already exists
+865132c46960: Pushing [====>                                              ]    2.1MB/24.22MB
+865132c46960: Pushing [=========>                                         ]  4.459MB/24.22MB
+865132c46960: Pushing [=============>                                     ]  6.556MB/24.22MB
+865132c46960: Pushing [===============>                                   ]  7.605MB/24.22MB
+d683471ab65a: Layer already exists
+0f25831f224d: Layer already exists
+08a01612ffca: Layer already exists
+8bb25f9cdc41: Layer already exists
+865132c46960: Pushing [==================>                                ]  8.915MB/24.22MB
+865132c46960: Pushing [=======================>                           ]  11.27MB/24.22MB
+865132c46960: Pushing [============================>                      ]  13.63MB/24.22MB
+f715ed19c28b: Layer already exists
+865132c46960: Pushing [===============================>                   ]  15.47MB/24.22MB
+865132c46960: Pushing [====================================>              ]  17.83MB/24.22MB
+865132c46960: Pushing [==========================================>        ]  20.45MB/24.22MB
+865132c46960: Pushing [===============================================>   ]  23.07MB/24.22MB
+865132c46960: Pushing [==================================================>]  24.23MB
+865132c46960: Pushed
+3: digest: sha256:116fefe71c5b9a2e6e4c5c6ef510c053229b31e958573a122daf3e10287abb41 size: 3256
+Cleaning local images [2ef0ced60277]
+Docker Build Done
+[GCPApplicationDeploy] $ /bin/sh -xe /tmp/jenkins4512473440057767007.sh
++ gcloud container clusters get-credentials bankappdeploy --zone us-west1-b --project ci-cd-poc-218510
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for bankappdeploy.
++ kubectl run appdeploy --image=daksha25/infybankapp:3 --port=8080
+kubectl run --generator=deployment/apps.v1beta1 is DEPRECATED and will be removed in a future version. Use kubectl create instead.
+deployment.apps/appdeploy created
++ kubectl get deployment
+NAME        DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+appdeploy   1         1         1            0           0s
++ kubectl get pods
+NAME                         READY   STATUS              RESTARTS   AGE
+appdeploy-7b6bff68f8-hvscs   0/1     ContainerCreating   0          1s
++ kubectl expose deployment appdeploy --type=Loadbalancer
+The Service "appdeploy" is invalid: spec.type: Unsupported value: "Loadbalancer": supported values: "ClusterIP", "ExternalName", "LoadBalancer", "NodePort"
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

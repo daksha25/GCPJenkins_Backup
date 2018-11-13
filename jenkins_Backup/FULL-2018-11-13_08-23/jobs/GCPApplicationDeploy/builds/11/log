@@ -1,0 +1,344 @@
+Started by user [8mha:////4C+RzKgWyO49TbLkHnIaiOjSo6AQdkn++EA3bnXLG0NwAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lMTs4oxEAMbOizvBAAAA[0mdaksha
+Building in workspace /var/lib/jenkins/workspace/GCPApplicationDeploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/daksha25/GCPDeployment.git # timeout=10
+Fetching upstream changes from https://github.com/daksha25/GCPDeployment.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/daksha25/GCPDeployment.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 63e0864e84cac57b8b02dfc3e2cec551acfb2edc (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 63e0864e84cac57b8b02dfc3e2cec551acfb2edc
+Commit message: "appfile"
+ > git rev-list --no-walk 63e0864e84cac57b8b02dfc3e2cec551acfb2edc # timeout=10
+[GCPApplicationDeploy] $ /bin/sh -xe /tmp/jenkins185773943094056729.sh
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Pid_G_v8.0 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/lib/jenkins/workspace/GCPApplicationDeploy/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:compile[m [1m(default-compile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 24 source files to /var/lib/jenkins/workspace/GCPApplicationDeploy/target/classes
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/GCPApplicationDeploy/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:testCompile[m [1m(default-testCompile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:3.0.0:war[m [1m(default-war)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [Pid_G_v8.0] in [/var/lib/jenkins/workspace/GCPApplicationDeploy/target/Pid_G_v8.0-0.0.1-SNAPSHOT]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/lib/jenkins/workspace/GCPApplicationDeploy/WebContent]
+[[1;34mINFO[m] Webapp assembled in [124 msecs]
+[[1;34mINFO[m] Building war: /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.war
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/pom.xml to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 5.433 s
+[[1;34mINFO[m] Finished at: 2018-11-12T09:48:51Z
+[[1;34mINFO[m] Final Memory: 20M/245M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
++ docker build -t daksha25/infybankapp:11 .
+free(): invalid pointer
+SIGABRT: abort
+PC=0x7f9f02f1ae97 m=0 sigcode=18446744073709551610
+signal arrived during cgo execution
+
+goroutine 1 [syscall, locked to thread]:
+runtime.cgocall(0x4afd50, 0xc42004dcc0, 0xc42004dce8)
+	/usr/lib/go-1.8/src/runtime/cgocall.go:131 +0xe2 fp=0xc42004dc90 sp=0xc42004dc50
+github.com/docker/docker-credential-helpers/secretservice._Cfunc_free(0x15e1270)
+	github.com/docker/docker-credential-helpers/secretservice/_obj/_cgo_gotypes.go:111 +0x41 fp=0xc42004dcc0 sp=0xc42004dc90
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List.func5(0x15e1270)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:96 +0x60 fp=0xc42004dcf8 sp=0xc42004dcc0
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List(0x0, 0x756060, 0xc420016380)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:97 +0x217 fp=0xc42004dda0 sp=0xc42004dcf8
+github.com/docker/docker-credential-helpers/secretservice.(*Secretservice).List(0x77e548, 0xc42004de88, 0x410022, 0xc4200162e0)
+	<autogenerated>:4 +0x46 fp=0xc42004dde0 sp=0xc42004dda0
+github.com/docker/docker-credential-helpers/credentials.List(0x756ba0, 0x77e548, 0x7560e0, 0xc42000e018, 0x0, 0x10)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:145 +0x3e fp=0xc42004de68 sp=0xc42004dde0
+github.com/docker/docker-credential-helpers/credentials.HandleCommand(0x756ba0, 0x77e548, 0x7ffebd31f82f, 0x4, 0x7560a0, 0xc42000e010, 0x7560e0, 0xc42000e018, 0x40e398, 0x4d35c0)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:60 +0x16d fp=0xc42004ded8 sp=0xc42004de68
+github.com/docker/docker-credential-helpers/credentials.Serve(0x756ba0, 0x77e548)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:41 +0x1cb fp=0xc42004df58 sp=0xc42004ded8
+main.main()
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/secretservice/cmd/main_linux.go:9 +0x4f fp=0xc42004df88 sp=0xc42004df58
+runtime.main()
+	/usr/lib/go-1.8/src/runtime/proc.go:185 +0x20a fp=0xc42004dfe0 sp=0xc42004df88
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1 fp=0xc42004dfe8 sp=0xc42004dfe0
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1
+
+rax    0x0
+rbx    0x7ffebd31d530
+rcx    0x7f9f02f1ae97
+rdx    0x0
+rdi    0x2
+rsi    0x7ffebd31d2c0
+rbp    0x7ffebd31d630
+rsp    0x7ffebd31d2c0
+r8     0x0
+r9     0x7ffebd31d2c0
+r10    0x8
+r11    0x246
+r12    0x7ffebd31d530
+r13    0x1000
+r14    0x0
+r15    0x30
+rip    0x7f9f02f1ae97
+rflags 0x246
+cs     0x33
+fs     0x0
+gs     0x0
+Sending build context to Docker daemon   92.7MB
+Step 1/5 : FROM tomcat:8.5
+ ---> 05af71dd9251
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+ ---> 0ab8f8cab4b8
+Step 3/5 : WORKDIR /usr/local/tomcat
+ ---> Running in 830ba25aa01f
+Removing intermediate container 830ba25aa01f
+ ---> a0701a10594b
+Step 4/5 : RUN chmod +x bin/catalina.sh
+ ---> Running in 9cf3263abfb2
+Removing intermediate container 9cf3263abfb2
+ ---> d6cac2f750fe
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+ ---> Running in c680f8c5b7ea
+Removing intermediate container c680f8c5b7ea
+ ---> 24e1778742a0
+Successfully built 24e1778742a0
+Successfully tagged daksha25/infybankapp:11
+Docker Build
+Docker Build: building image at path /var/lib/jenkins/workspace/GCPApplicationDeploy
+Step 1/5 : FROM tomcat:8.5
+
+
+ ---> 05af71dd9251
+
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+
+
+ ---> Using cache
+
+ ---> 0ab8f8cab4b8
+
+Step 3/5 : WORKDIR /usr/local/tomcat
+
+
+ ---> Using cache
+
+ ---> a0701a10594b
+
+Step 4/5 : RUN chmod +x bin/catalina.sh
+
+
+ ---> Using cache
+
+ ---> d6cac2f750fe
+
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+
+
+ ---> Using cache
+
+ ---> 24e1778742a0
+
+Successfully built 24e1778742a0
+
+Tagging built image with daksha25/infybankapp:11
+Docker Build Response : 24e1778742a0
+Pushing [daksha25/infybankapp:11]
+The push refers to repository [docker.io/daksha25/infybankapp]
+ded5ea358f5a: Preparing
+233467e9e295: Preparing
+1a9d06dd524f: Preparing
+de6d5c01d209: Preparing
+4c67d93ae2ce: Preparing
+b0b6904b7998: Preparing
+ceaed1136256: Preparing
+923bc9a5d019: Preparing
+185c62a48a71: Preparing
+d683471ab65a: Preparing
+0f25831f224d: Preparing
+08a01612ffca: Preparing
+8bb25f9cdc41: Preparing
+f715ed19c28b: Preparing
+b0b6904b7998: Waiting
+ceaed1136256: Waiting
+923bc9a5d019: Waiting
+185c62a48a71: Waiting
+d683471ab65a: Waiting
+0f25831f224d: Waiting
+08a01612ffca: Waiting
+8bb25f9cdc41: Waiting
+f715ed19c28b: Waiting
+4c67d93ae2ce: Layer already exists
+de6d5c01d209: Layer already exists
+ded5ea358f5a: Layer already exists
+1a9d06dd524f: Layer already exists
+b0b6904b7998: Layer already exists
+185c62a48a71: Layer already exists
+923bc9a5d019: Layer already exists
+233467e9e295: Pushing [>                                                  ]  264.7kB/24.22MB
+ceaed1136256: Layer already exists
+233467e9e295: Pushing [=>                                                 ]  526.8kB/24.22MB
+d683471ab65a: Layer already exists
+233467e9e295: Pushing [===>                                               ]  1.838MB/24.22MB
+08a01612ffca: Layer already exists
+233467e9e295: Pushing [=======>                                           ]   3.41MB/24.22MB
+8bb25f9cdc41: Layer already exists
+0f25831f224d: Layer already exists
+233467e9e295: Pushing [==========>                                        ]  4.983MB/24.22MB
+233467e9e295: Pushing [===============>                                   ]  7.605MB/24.22MB
+233467e9e295: Pushing [=====================>                             ]  10.23MB/24.22MB
+233467e9e295: Pushing [=====================>                             ]  10.49MB/24.22MB
+f715ed19c28b: Layer already exists
+233467e9e295: Pushing [==========================>                        ]  12.85MB/24.22MB
+233467e9e295: Pushing [=============================>                     ]  14.16MB/24.22MB
+233467e9e295: Pushing [==================================>                ]  16.78MB/24.22MB
+233467e9e295: Pushing [====================================>              ]  17.57MB/24.22MB
+233467e9e295: Pushing [=========================================>         ]  20.19MB/24.22MB
+233467e9e295: Pushing [===========================================>       ]  21.24MB/24.22MB
+233467e9e295: Pushing [=================================================> ]  23.86MB/24.22MB
+233467e9e295: Pushing [==================================================>]  24.23MB
+233467e9e295: Pushed
+11: digest: sha256:b51899af8db2c9bbffeb9923f8cba578f6fe64c8de52588befa6c6ff6e5cf097 size: 3256
+Cleaning local images [24e1778742a0]
+Docker Build Done
+[GCPApplicationDeploy] $ /bin/sh -xe /tmp/jenkins5084167218492121668.sh
++ gcloud container clusters create bankappdeploy --zone us-east4-b
+WARNING: Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+WARNING: Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+WARNING: Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+WARNING: Starting in 1.12, default node pools in new clusters will have their legacy Compute Engine instance metadata endpoints disabled by default. To create a cluster with legacy instance metadata endpoints disabled in the default node pool, run `clusters create` with the flag `--metadata disable-legacy-endpoints=true`.
+This will enable the autorepair feature for nodes. Please see https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more information on node autorepairs.
+WARNING: Starting in Kubernetes v1.10, new clusters will no longer get compute-rw and storage-ro scopes added to what is specified in --scopes (though the latter will remain included in the default --scopes). To use these scopes, add them explicitly to --scopes. To use the new behavior, set container/new_scopes_behavior property (gcloud config set container/new_scopes_behavior true).
+Creating cluster bankappdeploy in us-east4-b...
+..............................................................................................................................done.
+Created [https://container.googleapis.com/v1/projects/ci-cd-poc-218510/zones/us-east4-b/clusters/bankappdeploy].
+To inspect the contents of your cluster, go to: https://console.cloud.google.com/kubernetes/workload_/gcloud/us-east4-b/bankappdeploy?project=ci-cd-poc-218510
+kubeconfig entry generated for bankappdeploy.
+NAME           LOCATION    MASTER_VERSION  MASTER_IP       MACHINE_TYPE   NODE_VERSION  NUM_NODES  STATUS
+bankappdeploy  us-east4-b  1.9.7-gke.7     35.230.164.121  n1-standard-1  1.9.7-gke.7   3          RUNNING
++ gcloud container clusters get-credentials bankappdeploy --zone us-east4-b --project ci-cd-poc-218510
+Fetching cluster endpoint and auth data.
+kubeconfig entry generated for bankappdeploy.
++ kubectl run appdeploy --image=daksha25/infybankapp:11 --port=8080 -e CATALINA_OPTS=-Doracle.jdbc.timezoneAsRegion=false -Duser.timezone=CET
+Error: unknown shorthand flag: 'e' in -e
+
+
+Examples:
+  # Start a single instance of nginx.
+  kubectl run nginx --image=nginx
+  
+  # Start a single instance of hazelcast and let the container expose port 5701 .
+  kubectl run hazelcast --image=hazelcast --port=5701
+  
+  # Start a single instance of hazelcast and set environment variables "DNS_DOMAIN=cluster" and "POD_NAMESPACE=default" in the container.
+  kubectl run hazelcast --image=hazelcast --env="DNS_DOMAIN=cluster" --env="POD_NAMESPACE=default"
+  
+  # Start a single instance of hazelcast and set labels "app=hazelcast" and "env=prod" in the container.
+  kubectl run hazelcast --image=hazelcast --labels="app=hazelcast,env=prod"
+  
+  # Start a replicated instance of nginx.
+  kubectl run nginx --image=nginx --replicas=5
+  
+  # Dry run. Print the corresponding API objects without creating them.
+  kubectl run nginx --image=nginx --dry-run
+  
+  # Start a single instance of nginx, but overload the spec of the deployment with a partial set of values parsed from JSON.
+  kubectl run nginx --image=nginx --overrides='{ "apiVersion": "v1", "spec": { ... } }'
+  
+  # Start a pod of busybox and keep it in the foreground, don't restart it if it exits.
+  kubectl run -i -t busybox --image=busybox --restart=Never
+  
+  # Start the nginx container using the default command, but use custom arguments (arg1 .. argN) for that command.
+  kubectl run nginx --image=nginx -- <arg1> <arg2> ... <argN>
+  
+  # Start the nginx container using a different command and custom arguments.
+  kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>
+  
+  # Start the perl container to compute π to 2000 places and print it out.
+  kubectl run pi --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+  
+  # Start the cron job to compute π to 2000 places and print it out every 5 minutes.
+  kubectl run pi --schedule="0/5 * * * ?" --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --attach=false: If true, wait for the Pod to start running, and then attach to the Pod as if 'kubectl attach ...' were called.  Default false, unless '-i/--stdin' is set, in which case the default is true. With '--restart=Never' the exit code of the container process is returned.
+      --cascade=true: If true, cascade the deletion of the resources managed by this resource (e.g. Pods created by a ReplicationController).  Default true.
+      --command=false: If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --env=[]: Environment variables to set in the container
+      --expose=false: If true, a public, external service is created for the container(s) which are run
+  -f, --filename=[]: to use to replace the resource.
+      --force=false: Only used when grace-period=0. If true, immediately remove resources from API and bypass graceful deletion. Note that immediate deletion of some resources may result in inconsistency or data loss and requires confirmation.
+      --generator='': The name of the API generator to use, see http://kubernetes.io/docs/user-guide/kubectl-conventions/#generators for a list.
+      --grace-period=-1: Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+      --hostport=-1: The host port mapping for the container port. To demonstrate a single-machine container.
+      --image='': The image for the container to run.
+      --image-pull-policy='': The image pull policy for the container. If left empty, this value will not be specified by the client and defaulted by the server
+  -l, --labels='': Comma separated labels to apply to the pod(s). Will override previous values.
+      --leave-stdin-open=false: If the pod is started in interactive mode or with stdin, leave stdin open after the first attach completes. By default, stdin will be closed after the first attach completes.
+      --limits='': The resource requirement limits for this container.  For example, 'cpu=200m,memory=512Mi'.  Note that server side components may assign limits depending on the server configuration, such as limit ranges.
+  -o, --output='': Output format. One of: json|yaml|name|template|go-template|go-template-file|templatefile|jsonpath|jsonpath-file.
+      --overrides='': An inline JSON override for the generated object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+      --port='': The port that this container exposes.  If --expose is true, this is also the port used by the service that is created.
+      --quiet=false: If true, suppress prompt messages.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -r, --replicas=1: Number of replicas to create for this container. Default is 1.
+      --requests='': The resource requirement requests for this container.  For example, 'cpu=100m,memory=256Mi'.  Note that server side components may assign requests depending on the server configuration, such as limit ranges.
+      --restart='Always': The restart policy for this Pod.  Legal values [Always, OnFailure, Never].  If set to 'Always' a deployment is created, if set to 'OnFailure' a job is created, if set to 'Never', a regular pod is created. For the latter two --replicas must be 1.  Default 'Always', for CronJobs `Never`.
+      --rm=false: If true, delete resources created in this command for attached containers.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --schedule='': A schedule in the Cron format the job should be run with.
+      --service-generator='service/v2': The name of the generator to use for creating a service.  Only used if --expose is true
+      --service-overrides='': An inline JSON override for the generated service object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.  Only used if --expose is true.
+      --serviceaccount='': Service account to set in the pod spec
+  -i, --stdin=false: Keep stdin open on the container(s) in the pod, even if nothing is attached.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --timeout=0s: The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
+  -t, --tty=false: Allocated a TTY for each container in the pod.
+      --wait=false: If true, wait for resources to be gone before returning. This waits for finalizers.
+
+Usage:
+  kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown shorthand flag: 'e' in -e
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,22 @@
+commit 7a66782323fe17f8cc1aaaa4e6fa5f61f8cde088
+tree c7ae71400c1ca900473a4529c150b921dc45be75
+parent 6cba48699e20aecd0c6d7d860996bdaabcedbc7c
+author daksha25 <daksha.sapkale@cognizant.com> 2018-10-29 14:22:28 +0530
+committer GitHub <noreply@github.com> 2018-10-29 14:22:28 +0530
+
+    Update hibernate.cfg.xml
+
+
+
+:100644 100644 2af54967ef7ad30dc36a6ac3e63321c8ca4b17da 39ceb2781a3d3b80ffda33eb75b7b87ad487aecf M	src/com/resource/hibernate.cfg.xml
+commit 6cba48699e20aecd0c6d7d860996bdaabcedbc7c
+tree 01152e1b4b85ee3a79d38410090a160f4b5b64a0
+parent 3807c3739efb3975530563438e6f98340f7422e0
+author daksha25 <daksha.sapkale@cognizant.com> 2018-10-29 11:00:42 +0530
+committer GitHub <noreply@github.com> 2018-10-29 11:00:42 +0530
+
+    database added
+
+
+
+:000000 100644 0000000000000000000000000000000000000000 63476c581c101eaf1c281371c97ea4f2fded4209 A	devops.dmp

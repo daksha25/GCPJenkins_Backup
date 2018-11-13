@@ -1,0 +1,270 @@
+Started by user [8mha:////4C+RzKgWyO49TbLkHnIaiOjSo6AQdkn++EA3bnXLG0NwAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lMTs4oxEAMbOizvBAAAA[0mdaksha
+Building in workspace /var/lib/jenkins/workspace/GCPApplicationDeploy
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/daksha25/GCPDeployment.git # timeout=10
+Fetching upstream changes from https://github.com/daksha25/GCPDeployment.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/daksha25/GCPDeployment.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 63e0864e84cac57b8b02dfc3e2cec551acfb2edc (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 63e0864e84cac57b8b02dfc3e2cec551acfb2edc
+Commit message: "appfile"
+ > git rev-list --no-walk 7a66782323fe17f8cc1aaaa4e6fa5f61f8cde088 # timeout=10
+[GCPApplicationDeploy] $ /bin/sh -xe /tmp/jenkins7680908925912503333.sh
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding Pid_G_v8.0 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/lib/jenkins/workspace/GCPApplicationDeploy/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:compile[m [1m(default-compile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 24 source files to /var/lib/jenkins/workspace/GCPApplicationDeploy/target/classes
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java uses unchecked or unsafe operations.
+[[1;34mINFO[m] /var/lib/jenkins/workspace/GCPApplicationDeploy/src/com/DAO/ErrorRepositoryDAoImpl.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/GCPApplicationDeploy/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.6.1:testCompile[m [1m(default-testCompile)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-war-plugin:3.0.0:war[m [1m(default-war)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Packaging webapp
+[[1;34mINFO[m] Assembling webapp [Pid_G_v8.0] in [/var/lib/jenkins/workspace/GCPApplicationDeploy/target/Pid_G_v8.0-0.0.1-SNAPSHOT]
+[[1;34mINFO[m] Processing war project
+[[1;34mINFO[m] Copying webapp resources [/var/lib/jenkins/workspace/GCPApplicationDeploy/WebContent]
+[[1;34mINFO[m] Webapp assembled in [1258 msecs]
+[[1;34mINFO[m] Building war: /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mPid_G_v8.0[0;1m ---[m
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/target/infybank.war to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.war
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/GCPApplicationDeploy/pom.xml to /var/lib/jenkins/.m2/repository/Pid_G_v8/0/Pid_G_v8.0/0.0.1-SNAPSHOT/Pid_G_v8.0-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 11.255 s
+[[1;34mINFO[m] Finished at: 2018-11-12T08:47:00Z
+[[1;34mINFO[m] Final Memory: 21M/251M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
++ docker build -t daksha25/infybankapp:9 .
+free(): invalid pointer
+SIGABRT: abort
+PC=0x7f0256284e97 m=0 sigcode=18446744073709551610
+signal arrived during cgo execution
+
+goroutine 1 [syscall, locked to thread]:
+runtime.cgocall(0x4afd50, 0xc420055cc0, 0xc420055ce8)
+	/usr/lib/go-1.8/src/runtime/cgocall.go:131 +0xe2 fp=0xc420055c90 sp=0xc420055c50
+github.com/docker/docker-credential-helpers/secretservice._Cfunc_free(0xa1a270)
+	github.com/docker/docker-credential-helpers/secretservice/_obj/_cgo_gotypes.go:111 +0x41 fp=0xc420055cc0 sp=0xc420055c90
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List.func5(0xa1a270)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:96 +0x60 fp=0xc420055cf8 sp=0xc420055cc0
+github.com/docker/docker-credential-helpers/secretservice.Secretservice.List(0x0, 0x756060, 0xc420016380)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/secretservice/secretservice_linux.go:97 +0x217 fp=0xc420055da0 sp=0xc420055cf8
+github.com/docker/docker-credential-helpers/secretservice.(*Secretservice).List(0x77e548, 0xc420055e88, 0x410022, 0xc4200162e0)
+	<autogenerated>:4 +0x46 fp=0xc420055de0 sp=0xc420055da0
+github.com/docker/docker-credential-helpers/credentials.List(0x756ba0, 0x77e548, 0x7560e0, 0xc42000e018, 0x0, 0x10)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:145 +0x3e fp=0xc420055e68 sp=0xc420055de0
+github.com/docker/docker-credential-helpers/credentials.HandleCommand(0x756ba0, 0x77e548, 0x7ffecb42d835, 0x4, 0x7560a0, 0xc42000e010, 0x7560e0, 0xc42000e018, 0x40e398, 0x4d35c0)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:60 +0x16d fp=0xc420055ed8 sp=0xc420055e68
+github.com/docker/docker-credential-helpers/credentials.Serve(0x756ba0, 0x77e548)
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/obj-x86_64-linux-gnu/src/github.com/docker/docker-credential-helpers/credentials/credentials.go:41 +0x1cb fp=0xc420055f58 sp=0xc420055ed8
+main.main()
+	/build/golang-github-docker-docker-credential-helpers-cMhSy1/golang-github-docker-docker-credential-helpers-0.5.0/secretservice/cmd/main_linux.go:9 +0x4f fp=0xc420055f88 sp=0xc420055f58
+runtime.main()
+	/usr/lib/go-1.8/src/runtime/proc.go:185 +0x20a fp=0xc420055fe0 sp=0xc420055f88
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1 fp=0xc420055fe8 sp=0xc420055fe0
+
+goroutine 17 [syscall, locked to thread]:
+runtime.goexit()
+	/usr/lib/go-1.8/src/runtime/asm_amd64.s:2197 +0x1
+
+rax    0x0
+rbx    0x7ffecb42b5a0
+rcx    0x7f0256284e97
+rdx    0x0
+rdi    0x2
+rsi    0x7ffecb42b330
+rbp    0x7ffecb42b6a0
+rsp    0x7ffecb42b330
+r8     0x0
+r9     0x7ffecb42b330
+r10    0x8
+r11    0x246
+r12    0x7ffecb42b5a0
+r13    0x1000
+r14    0x0
+r15    0x30
+rip    0x7f0256284e97
+rflags 0x246
+cs     0x33
+fs     0x0
+gs     0x0
+Sending build context to Docker daemon   92.7MB
+Step 1/5 : FROM tomcat:8.5
+ ---> 05af71dd9251
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+ ---> 1f81ad42455b
+Step 3/5 : WORKDIR /usr/local/tomcat
+ ---> Running in c9af767861f7
+Removing intermediate container c9af767861f7
+ ---> eafb64a76495
+Step 4/5 : RUN chmod +x bin/catalina.sh
+ ---> Running in da56ce025659
+Removing intermediate container da56ce025659
+ ---> c3f88c494c71
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+ ---> Running in 8bbff67f896f
+Removing intermediate container 8bbff67f896f
+ ---> 82aa28a013e2
+Successfully built 82aa28a013e2
+Successfully tagged daksha25/infybankapp:9
+Docker Build
+Docker Build: building image at path /var/lib/jenkins/workspace/GCPApplicationDeploy
+Step 1/5 : FROM tomcat:8.5
+
+
+ ---> 05af71dd9251
+
+Step 2/5 : COPY /target/infybank.war /usr/local/tomcat/webapps
+
+
+ ---> Using cache
+
+ ---> 1f81ad42455b
+
+Step 3/5 : WORKDIR /usr/local/tomcat
+
+
+ ---> Using cache
+
+ ---> eafb64a76495
+
+Step 4/5 : RUN chmod +x bin/catalina.sh
+
+
+ ---> Using cache
+
+ ---> c3f88c494c71
+
+Step 5/5 : CMD ["bin/catalina.sh", "run"]
+
+
+ ---> Using cache
+
+ ---> 82aa28a013e2
+
+Successfully built 82aa28a013e2
+
+Tagging built image with daksha25/infybankapp:9
+Docker Build Response : 82aa28a013e2
+Pushing [daksha25/infybankapp:9]
+The push refers to repository [docker.io/daksha25/infybankapp]
+ded5ea358f5a: Preparing
+7ad25f8c17f4: Preparing
+1a9d06dd524f: Preparing
+de6d5c01d209: Preparing
+4c67d93ae2ce: Preparing
+b0b6904b7998: Preparing
+ceaed1136256: Preparing
+923bc9a5d019: Preparing
+185c62a48a71: Preparing
+d683471ab65a: Preparing
+0f25831f224d: Preparing
+08a01612ffca: Preparing
+8bb25f9cdc41: Preparing
+f715ed19c28b: Preparing
+923bc9a5d019: Waiting
+185c62a48a71: Waiting
+d683471ab65a: Waiting
+0f25831f224d: Waiting
+08a01612ffca: Waiting
+8bb25f9cdc41: Waiting
+f715ed19c28b: Waiting
+b0b6904b7998: Waiting
+ceaed1136256: Waiting
+4c67d93ae2ce: Layer already exists
+de6d5c01d209: Layer already exists
+1a9d06dd524f: Layer already exists
+ded5ea358f5a: Layer already exists
+7ad25f8c17f4: Pushing [>                                                  ]  264.7kB/24.22MB
+7ad25f8c17f4: Pushing [=>                                                 ]  526.8kB/24.22MB
+7ad25f8c17f4: Pushing [===>                                               ]  1.575MB/24.22MB
+7ad25f8c17f4: Pushing [======>                                            ]  3.148MB/24.22MB
+185c62a48a71: Layer already exists
+923bc9a5d019: Layer already exists
+ceaed1136256: Layer already exists
+7ad25f8c17f4: Pushing [=========>                                         ]  4.721MB/24.22MB
+7ad25f8c17f4: Pushing [==============>                                    ]   7.08MB/24.22MB
+7ad25f8c17f4: Pushing [===================>                               ]   9.44MB/24.22MB
+b0b6904b7998: Layer already exists
+7ad25f8c17f4: Pushing [====================>                              ]  9.702MB/24.22MB
+7ad25f8c17f4: Pushing [=========================>                         ]  12.32MB/24.22MB
+0f25831f224d: Layer already exists
+d683471ab65a: Layer already exists
+08a01612ffca: Layer already exists
+7ad25f8c17f4: Pushing [===========================>                       ]  13.37MB/24.22MB
+7ad25f8c17f4: Pushing [=================================>                 ]  15.99MB/24.22MB
+7ad25f8c17f4: Pushing [===================================>               ]  17.04MB/24.22MB
+7ad25f8c17f4: Pushing [=======================================>           ]  19.14MB/24.22MB
+7ad25f8c17f4: Pushing [==========================================>        ]  20.71MB/24.22MB
+7ad25f8c17f4: Pushing [==============================================>    ]  22.28MB/24.22MB
+8bb25f9cdc41: Layer already exists
+7ad25f8c17f4: Pushing [=================================================> ]  24.12MB/24.22MB
+7ad25f8c17f4: Pushing [==================================================>]  24.23MB
+f715ed19c28b: Layer already exists
+7ad25f8c17f4: Pushed
+9: digest: sha256:1cf161b62af28ff492f02066a8c6ff36baa2d905f40a025b451f17dc8070c681 size: 3256
+Cleaning local images [82aa28a013e2]
+Docker Build Done
+[GCPApplicationDeploy] $ /bin/sh -xe /tmp/jenkins8737228665599107312.sh
++ gcloud container clusters create bankappdeploy --zone us-west1-b
+WARNING: Starting in 1.12, new clusters will have basic authentication disabled by default. Basic authentication can be enabled (or disabled) manually using the `--[no-]enable-basic-auth` flag.
+WARNING: Starting in 1.12, new clusters will not have a client certificate issued. You can manually enable (or disable) the issuance of the client certificate using the `--[no-]issue-client-certificate` flag.
+WARNING: Currently VPC-native is not the default mode during cluster creation. In the future, this will become the default mode and can be disabled using `--no-enable-ip-alias` flag. Use `--[no-]enable-ip-alias` flag to suppress this warning.
+WARNING: Starting in 1.12, default node pools in new clusters will have their legacy Compute Engine instance metadata endpoints disabled by default. To create a cluster with legacy instance metadata endpoints disabled in the default node pool, run `clusters create` with the flag `--metadata disable-legacy-endpoints=true`.
+This will enable the autorepair feature for nodes. Please see https://cloud.google.com/kubernetes-engine/docs/node-auto-repair for more information on node autorepairs.
+WARNING: Starting in Kubernetes v1.10, new clusters will no longer get compute-rw and storage-ro scopes added to what is specified in --scopes (though the latter will remain included in the default --scopes). To use these scopes, add them explicitly to --scopes. To use the new behavior, set container/new_scopes_behavior property (gcloud config set container/new_scopes_behavior true).
+Creating cluster bankappdeploy in us-west1-b...
+.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................done.
+Timed out waiting for operation <Operation
+ clusterConditions: []
+ name: u'operation-1542012458631-f8171a1d'
+ nodepoolConditions: []
+ operationType: OperationTypeValueValuesEnum(CREATE_CLUSTER, 1)
+ selfLink: u'https://container.googleapis.com/v1/projects/29221673073/zones/us-west1-b/operations/operation-1542012458631-f8171a1d'
+ startTime: u'2018-11-12T08:47:38.631329585Z'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetLink: u'https://container.googleapis.com/v1/projects/29221673073/zones/us-west1-b/clusters/bankappdeploy'
+ zone: u'us-west1-b'>
+ERROR: (gcloud.container.clusters.create) Operation [<Operation
+ clusterConditions: []
+ name: u'operation-1542012458631-f8171a1d'
+ nodepoolConditions: []
+ operationType: OperationTypeValueValuesEnum(CREATE_CLUSTER, 1)
+ selfLink: u'https://container.googleapis.com/v1/projects/29221673073/zones/us-west1-b/operations/operation-1542012458631-f8171a1d'
+ startTime: u'2018-11-12T08:47:38.631329585Z'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetLink: u'https://container.googleapis.com/v1/projects/29221673073/zones/us-west1-b/clusters/bankappdeploy'
+ zone: u'us-west1-b'>] is still running
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
